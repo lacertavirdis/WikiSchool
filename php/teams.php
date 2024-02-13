@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>TEAMS</h1>
-    <script src="script.js">
+    <script src="../js/script.js">
     </script>
 </body>
 </html>

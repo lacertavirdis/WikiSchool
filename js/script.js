@@ -14,5 +14,5 @@ komunikat.addEventListener("click", function(){
 })
 
 art1.addEventListener("click", function(){
-    window.open("http://localhost/wikischool/applications.php", "_self");
+    window.open("http://localhost/wikischool/php/applications.php", "_self");
 })

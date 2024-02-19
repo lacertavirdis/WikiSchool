@@ -1,6 +1,7 @@
 let komunikat = document.getElementById("komunikat");
-let art1 = document.querySelector("article:first-of-type");
-let sec1 = document.querySelector("section:first-of-type");
+//let art1 = document.querySelector("article:first-of-type");
+//let sec1 = document.querySelector("section:first-of-type");
+let login= document.querySelector("#l");
 
 const timeout = setTimeout(kom, 500);
 function kom(){
@@ -9,8 +10,7 @@ function kom(){
 
 komunikat.addEventListener("click", function(){
     komunikat.style.display = "none";
-    art1.style.display = "flex";
-    sec1.style.display = "flex";
+    login.style.display = "flex";
 })
 
 art1.addEventListener("click", function(){

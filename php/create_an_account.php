@@ -9,18 +9,17 @@
     <title>WikiSchool</title>
 </head>
 <body>
-    <form method="post" id="l">
+    <form method="post" id="ca">
+        <input type="text" name="firstName" placeholder="First name"><br>
+        <input type="text" name="lastName" placeholder="Last name"><br>
         <input type="text" name="login" placeholder="Login"><br>
         <input type="password" name="password" placeholder="Password"><br>
-        <button type="submit">Login</button>
-        <a href="create_an_account.php">or create an account</a>
+        <select name="category">
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+        </select><br>
+        <button type="submit">Create an account</button>
     </form>
-    <div id="komunikat">
-        <img src="../graphics/logo.png" alt="logo">
-        <h1>Welcome to <b>WikiSchool!</b></h1>
-    </div>
-    <script src="../js/script.js?v=<?php echo time(); ?>">
-    </script>
 </body>
 </html>
 <?php

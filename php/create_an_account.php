@@ -20,14 +20,32 @@
         </select><br>
         <button type="submit">Create an account</button>
     </form>
+    <?php
+        if(isset($_POST["firstName"]) && isset($_POST["lastName"]) && isset($_POST["login"]) && isset($_POST["password"])){
+            $firstname = $_POST["firstName"];
+            $lastname = $_POST["lastName"];
+            $login = $_POST["login"];
+            $password = sha1($_POST["password"]);
+            $category = $_POST["category"];
+
+            $exists = mysqli_query($connection, "SELECT username FROM users WHERE username LIKE '$login';");
+
+            if(mysqli_num_rows($exists) == 1){
+                echo "You already have an account";
+            }
+            else{
+                $q = "INSERT INTO users(username, password, first_name, last_name, category_id)
+                    VALUES ('$login', '$password', '$firstname', '$lastname', $category);";
+                $result = mysqli_query($connection, $q);
+                echo "Your account was created successfully";
+            }
+        }
+        else{
+            echo "You have to fill all the prompts";
+        }
+    ?>
 </body>
 </html>
 <?php
-if(isset($_POST["firstName"]) && isset($_POST["lastName"]) && isset($_POST["login"]) && isset($_POST["password"])){
-    $firstname = $_POST["firstName"];
-    $lastname = $_POST["lastName"];
-    $login = $_POST["login"];
-    $password = sha1($_POST["password"]);
-}
 mysqli_close($connection);
 ?>

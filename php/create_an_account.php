@@ -23,5 +23,11 @@
 </body>
 </html>
 <?php
+if(isset($_POST["firstName"]) && isset($_POST["lastName"]) && isset($_POST["login"]) && isset($_POST["password"])){
+    $firstname = $_POST["firstName"];
+    $lastname = $_POST["lastName"];
+    $login = $_POST["login"];
+    $password = sha1($_POST["password"]);
+}
 mysqli_close($connection);
 ?>

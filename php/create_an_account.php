@@ -10,10 +10,10 @@
 </head>
 <body>
     <form method="post" id="ca">
-        <input type="text" name="firstName" placeholder="First name"><br>
-        <input type="text" name="lastName" placeholder="Last name"><br>
-        <input type="text" name="login" placeholder="Login"><br>
-        <input type="password" name="password" placeholder="Password"><br>
+        <input type="text" name="firstName" placeholder="First name" required><br>
+        <input type="text" name="lastName" placeholder="Last name" required><br>
+        <input type="text" name="login" placeholder="Login" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
         <select name="category">
             <option value="1">Student</option>
             <option value="2">Teacher</option>

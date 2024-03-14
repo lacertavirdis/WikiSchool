@@ -8,7 +8,7 @@
     <title>WikiSchool</title>
 </head>
 <body>
-    <form method="post" id="l">
+    <form method="post" id="l" action="homepage.php">
         <input type="text" name="login" placeholder="Login" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
         <button type="submit">Login</button>

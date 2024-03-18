@@ -9,10 +9,14 @@
 </head>
 <body>
     <header>
-        <a href=""><img alt="english" src="../../graphics/britain2.png"></a> 
-        <a href="../de/index_de.php"><img alt="german" src="../../graphics/germany.png"></a>
-        <a href="../pl/index_pl.php"><img src="../../graphics/poland.png" alt="polish"></a>
-        <img src="../../graphics/logo2.png" alt="logo">
+        <div>
+            <a href=""><img alt="english" src="../../graphics/britain2.png"></a> 
+            <a href="../de/index_de.php"><img alt="german" src="../../graphics/germany.png"></a>
+            <a href="../pl/index_pl.php"><img src="../../graphics/poland.png" alt="polish"></a>
+        </div>
+        <div>
+            <img src="../../graphics/logo2.png" alt="logo" id="logo">
+        </div>
     </header>
     <form method="post" id="l" action="homepage.php">
         <div><h3>Login</h3></div>

@@ -38,7 +38,7 @@
                 <head>
                     <meta charset='UTF-8'>
                     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                    <link rel='stylesheet' href='../css/applications.css?v=<?php echo time(); ?>'>
+                    <link rel='stylesheet' href='../../css/applications.css?v=<?php echo time(); ?>'>
                     <title>Applications</title>
                 </head>
                 <body>
@@ -52,7 +52,7 @@
                             <h1 id='hn'>OneNote</h1>
                         </div> 
                     </main>
-                    <script src='../js/applications.js?v=<?php echo time(); ?>'>
+                    <script src='../../js/applications.js?v=<?php echo time(); ?>'>
                     </script>
                 </body>
                 </html>

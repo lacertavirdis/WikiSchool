@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css?v=<?php echo time(); ?>">
+    <link rel="icon" type="image/x-icon" href="../../graphics/favicon.png">
+    <title>WikiSchool</title>
+</head>
+<body>
+<img alt="teams" src="../../graphics/logo2.png" id="logo" style="display:none">
+<div id="flags">
+    <a href="../british/index_en.php"><img alt="english" src="../../graphics/britain2.png" class="languages"> </a>
+    <div class="empty"></div>
+    <img alt="german" src="../../graphics/germany.png" class="languages"> 
+    <div class="empty"></div>
+    <a href="../polish/index_pl.php"><img alt="polish" src="../../graphics/poland.png" class="languages"></a>
+</div>
+    <form method="post" id="l">
+    <h2>Geben Sie Ihren Benutzernamen und Ihr Passwort ein und klicken Sie dann auf die Schaltfläche, um sich anzumelden, oder klicken Sie auf "Neues Konto erstellen", wenn Sie noch kein Konto haben.</h2>
+        <input type="text" name="login" placeholder="Anmeldung" required>
+        <input type="password" name="password" placeholder="Passwort" required>
+        <button type="submit">Sich anmelden</button>
+        <a href="../german/create_an_account_de.php" id="creating">Neues Konto erstellen</a>
+    </form>
+    <div id="komunikat">
+        <img src="../../graphics/logo2.png" alt="logo">
+        <h1>Willkommen bei <b>WikiSchool!</b></h1>
+    </div>
+    <script src="../../js/script.js?v=<?php echo time(); ?>">
+    </script>
+</body>
+</html>

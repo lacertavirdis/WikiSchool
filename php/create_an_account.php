@@ -10,6 +10,7 @@
 </head>
 <body>
     <form method="post" id="ca">
+        <div><h3>Create an account</h3></div>
         <input type="text" name="firstName" placeholder="First name" required><br>
         <input type="text" name="lastName" placeholder="Last name" required><br>
         <input type="text" name="login" placeholder="Login" required><br>

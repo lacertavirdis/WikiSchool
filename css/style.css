@@ -2,7 +2,6 @@ body{
     width:100%;
     height: 780px;
     display: flex;
-    overflow: hidden;
     padding: 0;
     margin: 0;
     justify-content: center;
@@ -51,7 +50,7 @@ div#komunikat{
 }
 
 div#komunikat:hover{
-    border:8px solid #427AA1;
+    outline:8px solid #427AA1;
     opacity:85%;
 }
 
@@ -94,22 +93,53 @@ b{
     color:#6BAA75;
 }
 
+header{
+    background-color: #8cb369;
+    width:100%;
+    height:100px;
+    display: none;
+}
+
+a[href] > img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    outline: 4px solid white;
+}
+
+a[href]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+form > div{
+    width:100%;
+    height:100px;
+    background-color: #8cb369;
+    margin-bottom: 50px;
+    color:white;
+    text-align: center;
+    font-size: 130%;
+}
+
 form#l{
     display: none;
-    background-color: #6BAA75;
     width:50vw;
     height:80vh;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content:space-between;
     border-radius: 50px;
     font-size: 130%;
     align-items: center;
+    outline:6px solid #8cb369;
+    overflow: hidden;
 }
 
 form#ca{
     display: flex;
-    background-color: #6BAA75;
     width:50vw;
     height:80vh;
     flex-direction: column;
@@ -118,6 +148,8 @@ form#ca{
     border-radius: 50px;
     font-size: 130%;
     align-items: center;
+    outline:6px solid #8cb369;
+    overflow: hidden;
 }
 
 input[name="login"], input[name="password"], 
@@ -130,6 +162,7 @@ input[name="firstName"], input[name="lastName"]{
     font-size: 70%;
     padding-left: 10px;
     border: 3px solid white;
+    outline: 4px solid #8cb369;
 }
 
 select{
@@ -145,9 +178,11 @@ button[type="submit"]{
     height:7%;
     border-radius: 25px;
     font-size: 70%;
-    border: 3px solid white;
+    outline: 3px solid #5603ad;
+    background-color: #8367c7;
+    cursor: pointer;
 }
 
 a{
-    color:white;
+    color: #5603ad;
 }

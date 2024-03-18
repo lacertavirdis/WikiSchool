@@ -8,7 +8,13 @@
     <title>WikiSchool</title>
 </head>
 <body>
+    <header>
+        <a href=""><img alt="english" src="../graphics/britain2.png"></a> 
+        <a href="../german/index_de.php"><img alt="german" src="../graphics/germany.png"></a>
+        <a href="../polish/index_pl.php"><img src="../graphics/poland.png" alt="polish"></a>
+    </header>
     <form method="post" id="l" action="homepage.php">
+        <div><h3>Login</h3></div>
         <input type="text" name="login" placeholder="Login" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
         <button type="submit">Login</button>
